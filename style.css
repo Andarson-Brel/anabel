@@ -471,4 +471,10 @@ li {
   .video-description {
     left: 10%;
   }
+  .outside-cta {
+    font-size: 0.8rem;
+  }
+  .nav-logo img {
+    width: 80px;
+  }
 }
