@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./fonts/Satoshi-Light.otf);
+  font-weight: light;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./fonts/Satoshi-Regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./fonts/Satoshi-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./fonts/Satoshi-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Franie";
+  src: url(./fonts/Franie-Regular.otf);
+  font-weight: normal;
+}
+body {
+  background-color: #100d1b;
+  background-image: url("./Images/beautiful-shining-stars-night-sky.svg");
+  color: #ffff;
+  font-family: "Satoshi";
+  font-weight: normal;
+  width: 100%;
+  box-sizing: border-box;
+}
+.name {
+  font-family: "Franie";
+}
+li {
+  list-style: none;
+  display: inline;
+  margin: 0 2rem;
+  font-size: 1rem;
+  font-weight: medium;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(19, 0, 86, 0.1);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  /* background: rgba(19, 0, 86, 0.15); */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+.nav-logo img {
+  width: 120px;
+}
+.cta {
+  font-size: 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 60px;
+  background: rgb(69, 35, 176);
+  background: linear-gradient(
+    93deg,
+    rgba(69, 35, 176, 1) 0%,
+    rgba(110, 142, 255, 1) 66%
+  );
+  color: #ffff;
+  margin-left: 8rem;
+}
+.main {
+  padding-top: 5rem;
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.name-container {
+  width: inherit;
+  position: relative;
+  text-align: center;
+}
+.hat-shadow,
+.hat,
+.video-container,
+.eclipse-bg,
+.lady,
+.eclipse-left,
+.eclipse-right {
+  position: absolute;
+}
+.video-container,
+.eclipse-bg,
+.lady,
+.eclipse-left,
+.eclipse-right {
+  z-index: 4;
+}
+.name {
+  z-index: 2;
+  position: relative;
+  font-size: 200px;
+}
+
+.hat-shadow {
+  right: 255px;
+  top: 0;
+  z-index: 3;
+}
+.hat {
+  right: 170px;
+  top: -90px;
+}
+.video-container {
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 600px;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.main-content-container {
+  /* position: relative; */
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/* .main-content-container .lady,
+.eclipse-bg {
+  width: 50%;
+} */
+.magic-pen {
+  width: 90px;
+}
+.eye-inactive,
+.eye-active {
+  width: 100px;
+  z-index: 22;
+  cursor: pointer;
+  position: relative;
+}
+.lady {
+  top: 200px;
+  width: 670px;
+}
+.eclipse-bg {
+  top: -50px;
+  width: 1070px;
+}
+.eclipse-left {
+  bottom: -250px;
+  left: 100px;
+}
+.eclipse-right {
+  bottom: -250px;
+
+  right: 100px;
+}
+.video-description {
+  right: 50px;
+  bottom: 200px;
+  position: absolute;
+  padding: 1.5rem;
+  width: 400px;
+  height: 240px;
+  border-radius: 20px;
+  background: rgba(19, 0, 86, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 21;
+}
+.video-writeup {
+  font-family: "Satoshi";
+  margin-bottom: 1rem;
+  line-height: 2;
+  font-weight: light;
+}
+.magic-pen {
+  display: none;
+}
+.eye-container {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+}
+.eye-active {
+  display: none;
+}
+.play-btn {
+  cursor: pointer;
+}
