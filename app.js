@@ -11,7 +11,8 @@ const hatShadow = document.querySelector(".hat-shadow");
 const hat = document.querySelector(".hat");
 const shootingStar = document.querySelector(".shooting-star");
 const vid = document.querySelector(".video-container video");
-
+// Get the viewport width
+const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     gsap.to(links, { color: "#ffff" });
@@ -50,6 +51,14 @@ playBtn.forEach((btn) => {
       shootingStar.style.left = "1400px";
       shootingStar.style.bottom = "1400px";
       vid.play();
+      if (viewportWidth <= 480) {
+        // Get the .hat element
+
+        // Set the width, right and top styles
+        eyective.style.width = "80px";
+      }
+      // Check if the viewport width is less than or equal to 480px
+
       isDown = true;
     } else {
       vidContainer.style.top = "600px";
